@@ -1,5 +1,7 @@
 # Low-latency Event-based Object Detection with Spatially-Sparse Linear Attention
 
+![image](media/ssla.png)
+
 Code for "Low-latency Event-based Object Detection with Spatially-Sparse Linear Attention" by Haiqing Hao.
 
 Email: haohq19@gmail.com
@@ -25,6 +27,7 @@ pip install hdf5plugin
 Please download Gen1 Automotive datasets from their official websites.
 
 Gen1: https://www.prophesee.ai/2020/01/24/prophesee-gen1-automotive-detection-dataset/
+
 N-Caltech101: https://github.com/uzh-rpg/dagr/tree/master
 
 All datasets should be placed under ```./data ```.
