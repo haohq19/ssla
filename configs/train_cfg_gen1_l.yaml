@@ -1,0 +1,25 @@
+# random
+seed: 2025
+
+# model
+model_cfg: 'configs/model/MOS_L.yaml'
+hot_pixel_thres: 50
+conf_thres: 0.001
+iou_thres: 0.65
+
+# data
+dataset_name: 'Gen1'
+window_size: 0.1  # in seconds
+num_workers: 4
+
+# training
+batch_size: 4
+gradient_batch_size: 8 # equivalent batch size for gradient accumulation
+learning_rate: 1.0e-3
+save_checkpoint: True
+max_epoch: 40
+do_validation: True
+checkpoint_dir: 'checkpoints/'
+
+# resume
+# resume_ckpt: '/home/haohq/mos/data/checkpoints/Gen1-20260120_015148/last.ckpt'

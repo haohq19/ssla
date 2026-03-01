@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+lightning_logs/
+data/
+others/
+.vscode/
+.test_vis/*
+runs/
+checkpoints/
+std/
+*.sh
+mos_recurrent
