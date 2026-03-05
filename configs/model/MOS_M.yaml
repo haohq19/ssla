@@ -1,0 +1,43 @@
+name: 'MOS_M'
+expected_strides:
+  - 8  
+layers:
+  - name: 'MosAttention'
+    kernel_size: 1
+    hidden_size: 24
+  - name: 'MosAttention'
+    kernel_size: 3
+    hidden_size: 24
+  - name: 'SparseMaxPool'
+    kernel_size: 2
+  - name: 'TemporalDropout'
+    window_size: 4
+  # stride 2 feature size 32
+  - name: 'MosAttention'
+    kernel_size: 3
+    hidden_size: 48
+  - name: 'MosAttention'
+    kernel_size: 3
+    hidden_size: 48
+  - name: 'SparseMaxPool'
+    kernel_size: 2
+  - name: 'TemporalDropout'
+    window_size: 4
+  # stride 4 feature size 64
+  - name: 'MosAttention'
+    kernel_size: 3
+    hidden_size: 96
+  - name: 'MosAttention'
+    kernel_size: 3
+    hidden_size: 96
+  - name: 'SparseMaxPool'
+    kernel_size: 2
+  - name: 'TemporalDropout'
+    window_size: 4
+  # stride 8 feature size 128
+  - name: 'MosAttention'
+    kernel_size: 3
+    hidden_size: 192
+  - name: 'MosAttention'
+    kernel_size: 3
+    hidden_size: 192
