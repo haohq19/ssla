@@ -2,7 +2,7 @@
 
 ![image](media/ssla.png)
 
-Code for "Low-latency Event-based Object Detection with Spatially-Sparse Linear Attention" by Haiqing Hao.
+Code for "Low-latency Event-based Object Detection with Spatially-Sparse Linear Attention".
 
 Email: haohq19@gmail.com
 
